@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { CheckCircle, Users, Target, Zap, Shield, Monitor } from 'lucide-react';
 import './About.css';
 
@@ -163,6 +164,29 @@ const About = () => {
               <li><CheckCircle size={20} /> Dedicated After-Sales Service</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      {/* About CTA Section */}
+      <section className="about-cta-section section">
+        <div className="container">
+          <motion.div 
+            className="about-cta-card glass-card text-center"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="about-cta-glow"></div>
+            <h2 className="mb-2">Let's Create Something <span className="highlight">Extraordinary</span> Together</h2>
+            <p className="mb-3" style={{ maxWidth: '600px', margin: '0 auto' }}>
+              Whether you need assistance with designing a custom sign board or planning an outdoor branding campaign, our experts are here to help.
+            </p>
+            <div className="about-cta-buttons">
+              <Link to="/contact" className="btn btn-primary">Get a Free Quote</Link>
+              <a href="tel:08560005555" className="btn btn-secondary">Call Now</a>
+            </div>
+          </motion.div>
         </div>
       </section>
     </>
