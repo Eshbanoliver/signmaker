@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`navbar ${scrolled ? 'scrolled glass' : ''}`}>
+    <nav className={`navbar ${scrolled || mobileMenuOpen ? 'scrolled glass' : ''}`}>
       <div className="nav-container container">
         <Link to="/" className="logo-wrapper">
           <img src="/logo.png" alt="SIGN MAKER led board Logo" className="navbar-logo" />
