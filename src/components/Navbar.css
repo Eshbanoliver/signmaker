@@ -51,10 +51,12 @@
     height: 65px;
   }
   .navbar-logo {
-    height: 70px;
+    height: 115px;
+    transform: translateY(15px);
   }
   .navbar.scrolled .navbar-logo {
-    height: 55px;
+    height: 95px;
+    transform: translateY(12px);
   }
 }
 
