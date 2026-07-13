@@ -1,0 +1,17 @@
+Options -MultiViews
+DirectoryIndex index.html index.php
+
+RewriteEngine On
+
+# Force correct JS MIME type for ES modules
+<Files "*.js">
+    ForceType text/javascript
+</Files>
+<Files "*.mjs">
+    ForceType text/javascript
+</Files>
+
+# SPA: redirect all non-existing paths to index.html
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ /index.html [QSA,L]
