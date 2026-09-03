@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet-async';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { CheckCircle, Users, Target, Zap, Shield, Monitor } from 'lucide-react';
+import { CheckCircle, Users, Target, Zap, Shield, Monitor, X, ChevronLeft, ChevronRight, Images } from 'lucide-react';
+import { useState, useEffect, useCallback } from 'react';
 import './About.css';
 
 const fadeIn = {
@@ -9,7 +10,61 @@ const fadeIn = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } }
 };
 
+const galleryImages = [
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.36 PM (1).jpeg', alt: 'Sign Making Work 1' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.36 PM.jpeg', alt: 'Sign Making Work 2' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.38 PM.jpeg', alt: 'Sign Making Work 3' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.39 PM (1).jpeg', alt: 'Sign Making Work 4' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.39 PM.jpeg', alt: 'Sign Making Work 5' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.40 PM.jpeg', alt: 'Sign Making Work 6' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.44 PM (1).jpeg', alt: 'Sign Making Work 7' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.44 PM.jpeg', alt: 'Sign Making Work 8' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.46 PM (1).jpeg', alt: 'Sign Making Work 9' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.46 PM.jpeg', alt: 'Sign Making Work 10' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.50 PM.jpeg', alt: 'Sign Making Work 11' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.51 PM (1).jpeg', alt: 'Sign Making Work 12' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.51 PM (2).jpeg', alt: 'Sign Making Work 13' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.51 PM.jpeg', alt: 'Sign Making Work 14' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.55 PM (1).jpeg', alt: 'Sign Making Work 15' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.55 PM (2).jpeg', alt: 'Sign Making Work 16' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.56 PM (1).jpeg', alt: 'Sign Making Work 17' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.56 PM.jpeg', alt: 'Sign Making Work 18' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.57 PM.jpeg', alt: 'Sign Making Work 19' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.58 PM.jpeg', alt: 'Sign Making Work 20' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.38.59 PM.jpeg', alt: 'Sign Making Work 21' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.39.00 PM (1).jpeg', alt: 'Sign Making Work 22' },
+  { src: '/images/WhatsApp Image 2026-09-03 at 3.39.00 PM (2).jpeg', alt: 'Sign Making Work 23' },
+  { src: '/images/sign_maker_workshop.webp', alt: 'Sign Maker Workshop' },
+];
+
 const About = () => {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const openLightbox = (idx: number) => setLightboxIndex(idx);
+  const closeLightbox = () => setLightboxIndex(null);
+
+  const prevImage = useCallback(() => {
+    setLightboxIndex(prev => (prev !== null ? (prev - 1 + galleryImages.length) % galleryImages.length : null));
+  }, []);
+
+  const nextImage = useCallback(() => {
+    setLightboxIndex(prev => (prev !== null ? (prev + 1) % galleryImages.length : null));
+  }, []);
+
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') prevImage();
+      if (e.key === 'ArrowRight') nextImage();
+    };
+    document.addEventListener('keydown', handleKey);
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', handleKey);
+      document.body.style.overflow = '';
+    };
+  }, [lightboxIndex, prevImage, nextImage]);
   return (
     <>
       <Helmet>
@@ -166,6 +221,89 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* Gallery Section */}
+      <section className="gallery-section section" id="gallery">
+        <div className="container">
+          <motion.div
+            className="section-title text-center"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            variants={fadeIn}
+          >
+            <div className="gallery-title-icon">
+              <Images size={32} />
+            </div>
+            <h2>Our <span className="highlight">Gallery</span></h2>
+            <p>A glimpse into our craftsmanship — real projects, real quality.</p>
+          </motion.div>
+
+          <div className="gallery-masonry">
+            {galleryImages.map((img, idx) => (
+              <motion.div
+                key={idx}
+                className="gallery-item"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: (idx % 6) * 0.08, duration: 0.5 }}
+                whileHover={{ y: -6, scale: 1.02 }}
+                onClick={() => openLightbox(idx)}
+              >
+                <img
+                  src={img.src}
+                  alt={img.alt}
+                  loading="lazy"
+                />
+                <div className="gallery-item-overlay">
+                  <span className="gallery-zoom-icon">&#x2B07;</span>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {lightboxIndex !== null && (
+          <motion.div
+            className="lightbox-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={closeLightbox}
+          >
+            <motion.div
+              className="lightbox-content"
+              initial={{ scale: 0.85, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.85, opacity: 0 }}
+              transition={{ type: 'spring', stiffness: 300, damping: 25 }}
+              onClick={e => e.stopPropagation()}
+            >
+              <button className="lightbox-close" onClick={closeLightbox} aria-label="Close">
+                <X size={24} />
+              </button>
+              <button className="lightbox-nav lightbox-prev" onClick={prevImage} aria-label="Previous">
+                <ChevronLeft size={28} />
+              </button>
+              <img
+                src={galleryImages[lightboxIndex].src}
+                alt={galleryImages[lightboxIndex].alt}
+                className="lightbox-img"
+              />
+              <button className="lightbox-nav lightbox-next" onClick={nextImage} aria-label="Next">
+                <ChevronRight size={28} />
+              </button>
+              <div className="lightbox-counter">
+                {lightboxIndex + 1} / {galleryImages.length}
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* About CTA Section */}
       <section className="about-cta-section section">
