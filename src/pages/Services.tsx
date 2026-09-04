@@ -18,8 +18,7 @@ const staggerContainer = {
 
 const Services = () => {
   const serviceItems = [
-    'Outdoor Advertising', 'Graphic Design', 'Print Ads', 'TV & Video', 
-    'Billboard Design and Consulting', 'Branding', 'Logo Design', 
+    'Outdoor Advertising', 'Billboard Design and Consulting', 'Branding', 
     'ACP Glazing', 'Acrylic 3D Letters', 'Acrylic LED Letters', 'Acrylic Sign Boards', 
     'Brass Letters', 'Channel Letter', 'CNC Cutting', 'Creative Design', 
     'Fabric Board', 'Flex Boards', 'Glass Work', 'Glow Sign Board', 
@@ -27,7 +26,8 @@ const Services = () => {
     'Laser and CNC Cutting', 'LED Board', 'LED Display', 'LED Display Board', 
     'LED Sign Board', 'LED Sign Board Manufacture', 'LED Sign Board Maker', 
     'Market Analysis', 'Marketing Strategy', 'SS & Brass Letters', 'Sign Letters', 
-    'Sign Maker', 'Stainless Steel Letter', 'Steel Letter Board'
+    'Sign Maker', 'Stainless Steel Letter', 'Steel Letter Board',
+    'Graphic Design', 'Print Ads', 'TV & Video', 'Logo Design'
   ];
 
   // Each service has a unique image (AI-generated stored locally, or curated Unsplash)
