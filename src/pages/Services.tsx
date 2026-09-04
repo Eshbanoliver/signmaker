@@ -19,7 +19,7 @@ const staggerContainer = {
 const Services = () => {
   const serviceItems = [
     'Outdoor Advertising', 'Graphic Design', 'Print Ads', 'TV & Video', 
-    'Billboard Design and Consulting', 'Branding', 'Logo Design', 'Paid Advertising', 
+    'Billboard Design and Consulting', 'Branding', 'Logo Design', 
     'ACP Glazing', 'Acrylic 3D Letters', 'Acrylic LED Letters', 'Acrylic Sign Boards', 
     'Brass Letters', 'Channel Letter', 'CNC Cutting', 'Creative Design', 
     'Fabric Board', 'Flex Boards', 'Glass Work', 'Glow Sign Board', 
@@ -59,10 +59,6 @@ const Services = () => {
     'Logo Design': {
       image: '/srv-logo.webp',
       desc: 'Memorable logo design that communicates your brand\'s essence at a single glance.'
-    },
-    'Paid Advertising': {
-      image: '/srv-paid.webp',
-      desc: 'Data-driven paid advertising campaigns that maximize your budget and deliver measurable results.'
     },
     'ACP Glazing': {
       image: '/srv-acp.webp',
