@@ -25,9 +25,8 @@ const Services = () => {
     'LED Letters', 'LED Screen Wall', 'LED Sign Board Manufacturer', 'LED Board Maker', 
     'Laser and CNC Cutting', 'LED Board', 'LED Display', 'LED Display Board', 
     'LED Sign Board', 'LED Sign Board Manufacture', 'LED Sign Board Maker', 
-    'Market Analysis', 'Marketing Strategy', 'SS & Brass Letters', 'Sign Letters', 
-    'Sign Maker', 'Stainless Steel Letter', 'Steel Letter Board',
-    'Graphic Design', 'Print Ads', 'TV & Video', 'Logo Design'
+    'SS & Brass Letters', 'Sign Letters', 
+    'Stainless Steel Letter', 'Steel Letter Board'
   ];
 
   // Each service has a unique image (AI-generated stored locally, or curated Unsplash)
@@ -36,18 +35,6 @@ const Services = () => {
       image: '/srv-outdoor.webp',
       desc: 'High-impact outdoor advertising that puts your brand in front of thousands every day.'
     },
-    'Graphic Design': {
-      image: '/srv-graphic.webp',
-      desc: 'Creative graphic design services that transform your brand vision into compelling visuals.'
-    },
-    'Print Ads': {
-      image: '/srv-print.webp',
-      desc: 'Vibrant print advertisements crafted to capture attention and drive real customer action.'
-    },
-    'TV & Video': {
-      image: '/srv-tv.webp',
-      desc: 'Professional TV and video ad production that brings your brand story to life on screen.'
-    },
     'Billboard Design and Consulting': {
       image: '/srv-billboard-led.png',
       desc: 'Strategic digital LED billboard design and placement consulting for maximum audience reach and ROI.'
@@ -55,10 +42,6 @@ const Services = () => {
     'Branding': {
       image: '/srv-branding-led.png',
       desc: 'Comprehensive branding services and illuminated signage solutions that build a consistent, powerful identity for your business.'
-    },
-    'Logo Design': {
-      image: '/srv-logo.webp',
-      desc: 'Memorable logo design that communicates your brand\'s essence at a single glance.'
     },
     'ACP Glazing': {
       image: '/srv-acp.webp',
@@ -148,14 +131,6 @@ const Services = () => {
       image: '/srv-led-sign-board-maker.png',
       desc: 'Skilled LED sign board makers producing custom illuminated channel letter signs for every business type.'
     },
-    'Market Analysis': {
-      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'In-depth signage market analysis to identify optimal placement locations and maximize customer reach.'
-    },
-    'Marketing Strategy': {
-      image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Holistic marketing strategies that align your branding, advertising, and signage for real impact.'
-    },
     'SS & Brass Letters': {
       image: '/srv-brass.webp',
       desc: 'Premium stainless steel and brass letter combinations for a distinguished, professional look.'
@@ -163,10 +138,6 @@ const Services = () => {
     'Sign Letters': {
       image: '/srv-sign-letters.webp',
       desc: 'Custom sign letters in various materials and finishes to suit every brand and budget.'
-    },
-    'Sign Maker': {
-      image: 'https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Udaipur\'s premier sign maker delivering craftsmanship, creativity, and quality on every project.'
     },
     'Stainless Steel Letter': {
       image: '/srv-ss-letters.webp',
