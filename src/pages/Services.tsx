@@ -89,68 +89,68 @@ const Services = () => {
       desc: 'Innovative creative design solutions that make your brand stand out from the competition.'
     },
     'Fabric Board': {
-      image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'High-quality fabric boards with vivid print quality, perfect for trade shows and events.'
+      image: '/srv-fabric-board.png',
+      desc: 'High-quality backlit fabric boards with vivid print quality, perfect for modern retail displays and trade show events.'
     },
     'Flex Boards': {
-      image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Affordable and weatherproof flex boards with sharp, full-colour printing for any outdoor use.'
+      image: '/srv-flex-boards.png',
+      desc: 'Affordable, weather-resistant outdoor flex boards with sharp full-color printing for storefronts and promotions.'
     },
     'Glass Work': {
       image: '/srv-glass.webp',
       desc: 'Custom frosted and etched glass work for office partitions, doors, and decorative branding.'
     },
     'Glow Sign Board': {
-      image: 'https://images.unsplash.com/photo-1542744094-24638eff58bb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Bright, energy-efficient glow sign boards that keep your business visible day and night.'
+      image: '/srv-glow-sign-board.png',
+      desc: 'Bright, energy-efficient illuminated glow sign boards that keep your storefront visible day and night.'
     },
     'LED Letters': {
-      image: 'https://images.unsplash.com/photo-1510511233900-1982d92bd835?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Bold LED letters that illuminate your brand with consistent, long-lasting brilliance.'
+      image: '/srv-led-letters.png',
+      desc: 'Bold 3D front-lit LED channel letters that illuminate your brand name with long-lasting brilliance.'
     },
     'LED Screen Wall': {
-      image: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Stunning large-format LED screen walls for dynamic digital advertising and event displays.'
+      image: '/srv-led-screen-wall.png',
+      desc: 'Stunning large-format indoor/outdoor LED screen walls for dynamic video advertising and event displays.'
     },
     'LED Sign Board Manufacturer': {
-      image: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Rajasthan\'s trusted LED sign board manufacturer delivering quality boards at competitive pricing.'
+      image: '/srv-led-manufacturer.png',
+      desc: 'Rajasthan\'s trusted LED sign board manufacturer delivering quality factory-crafted boards at competitive pricing.'
     },
     'LED Board Maker': {
-      image: 'https://images.unsplash.com/photo-1621905252507-b35492cc74b4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Expert LED board makers crafting durable, high-brightness boards for all types of businesses.'
+      image: '/srv-led-board-maker.png',
+      desc: 'Expert LED board makers crafting durable, high-brightness illuminated boards tailored to your business.'
     },
     'Laser and CNC Cutting': {
       image: '/srv-cnc.webp',
       desc: 'Combined laser and CNC cutting services for ultra-precise, intricate custom fabrication work.'
     },
     'LED Board': {
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Versatile LED boards for retail, offices, and hospitality — custom-built to your specifications.'
+      image: '/srv-led-board.png',
+      desc: 'Versatile commercial LED sign boards for retail, office facades, and hospitality businesses.'
     },
     'LED Display': {
-      image: 'https://images.unsplash.com/photo-1512756290469-ec264b7fbf87?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'High-resolution LED displays that present your brand message with stunning clarity and impact.'
+      image: '/srv-led-display.png',
+      desc: 'High-resolution digital LED displays presenting your brand message with stunning dynamic visual impact.'
     },
     'LED Display Board': {
-      image: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Premium LED display boards for indoor and outdoor use, engineered for all-weather performance.'
+      image: '/srv-led-display-board.png',
+      desc: 'Premium electronic LED display boards engineered for clear text, graphics, and high-visibility advertising.'
     },
     'LED Sign Board': {
-      image: 'https://images.unsplash.com/photo-1520857014576-2c4f4c972b57?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Custom LED sign boards that grab attention and communicate your brand message day and night.'
+      image: '/srv-led-sign-board.png',
+      desc: 'Custom high-brightness LED sign boards that grab customer attention day and night.'
     },
     'LED Sign Board Manufacture': {
-      image: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'End-to-end LED sign board manufacture from raw materials to finished, installed signage.'
+      image: '/srv-led-sign-board-manufacture.png',
+      desc: 'End-to-end LED sign board manufacture from raw metal & acrylic to finished illuminated signage.'
     },
     'LED Sign Board Maker': {
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Skilled LED sign board makers producing custom illuminated signs for every business type.'
+      image: '/srv-led-sign-board-maker.png',
+      desc: 'Skilled LED sign board makers producing custom illuminated channel letter signs for every business type.'
     },
     'Market Analysis': {
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'In-depth market analysis to identify opportunities and position your brand for maximum growth.'
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
+      desc: 'In-depth signage market analysis to identify optimal placement locations and maximize customer reach.'
     },
     'Marketing Strategy': {
       image: 'https://images.unsplash.com/photo-1533750349088-cd871a92f312?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
