@@ -49,8 +49,8 @@ const Services = () => {
       desc: 'Professional TV and video ad production that brings your brand story to life on screen.'
     },
     'Billboard Design and Consulting': {
-      image: '/srv-billboard.webp',
-      desc: 'Strategic billboard design and placement consulting for maximum audience reach and ROI.'
+      image: '/srv-billboard-led.png',
+      desc: 'Strategic digital LED billboard design and placement consulting for maximum audience reach and ROI.'
     },
     'Branding': {
       image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
