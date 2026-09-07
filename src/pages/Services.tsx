@@ -53,8 +53,8 @@ const Services = () => {
       desc: 'Strategic digital LED billboard design and placement consulting for maximum audience reach and ROI.'
     },
     'Branding': {
-      image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Comprehensive branding services that build a consistent, powerful identity for your business.'
+      image: '/srv-branding-led.png',
+      desc: 'Comprehensive branding services and illuminated signage solutions that build a consistent, powerful identity for your business.'
     },
     'Logo Design': {
       image: '/srv-logo.webp',
