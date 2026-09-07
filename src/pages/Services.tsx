@@ -19,7 +19,7 @@ const staggerContainer = {
 const Services = () => {
   const serviceItems = [
     'Outdoor Advertising', 'Billboard Design and Consulting', 'Branding', 
-    'ACP Glazing', 'Acrylic 3D Letters', 'Acrylic LED Letters', 'Acrylic Sign Boards', 
+    'ACP Glazing', 'Acrylic 3D Letters', 'Acrylic Sign Boards', 
     'Brass Letters', 'Channel Letter', 'CNC Cutting', 'Creative Design', 
     'Fabric Board', 'Flex Boards', 'Glass Work', 'Glow Sign Board', 
     'LED Letters', 'LED Screen Wall', 'LED Sign Board Manufacturer', 'LED Board Maker', 
@@ -67,10 +67,6 @@ const Services = () => {
     'Acrylic 3D Letters': {
       image: '/srv-acrylic-3d.webp',
       desc: 'Stunning glossy acrylic 3D letters that give your storefront a premium, bold visual presence.'
-    },
-    'Acrylic LED Letters': {
-      image: 'https://images.unsplash.com/photo-1554260570-e9689a3418b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80',
-      desc: 'Eye-catching acrylic letters with built-in LED backlighting for brilliant day and night visibility.'
     },
     'Acrylic Sign Boards': {
       image: '/srv-acrylic-boards.webp',
