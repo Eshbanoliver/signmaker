@@ -34,13 +34,15 @@
 }
 
 .navbar-logo {
-  height: 85px;
+  height: 75px;
   width: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
   transition: height 0.3s ease, transform 0.3s ease, filter 0.3s ease;
 }
 
 .navbar.scrolled .navbar-logo {
-  height: 68px;
+  height: 62px;
 }
 
 @media (max-width: 768px) {
@@ -51,18 +53,18 @@
     height: 65px;
   }
   .navbar-logo {
-    height: 115px;
-    transform: translateY(15px);
+    height: 62px;
+    transform: none;
   }
   .navbar.scrolled .navbar-logo {
-    height: 95px;
-    transform: translateY(12px);
+    height: 52px;
+    transform: none;
   }
 }
 
 .logo-wrapper:hover .navbar-logo {
-  transform: scale(1.02);
-  filter: drop-shadow(0 0 8px rgba(0, 240, 255, 0.4));
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px rgba(220, 168, 48, 0.45));
 }
 
 .nav-links {
