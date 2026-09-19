@@ -104,5 +104,5 @@ This application is ready for deployment across static hosting platforms:
 
 ## 📄 License
 
-.
+. This is a copyright project. All Rights Reserved.
 
